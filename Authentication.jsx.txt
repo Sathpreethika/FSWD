@@ -8,19 +8,19 @@ function Authentication() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // Validation
+   
     if (!username || !password) {
-      alert("❌ Username and Password are required");
+      alert(" Username and Password are required");
       return;
     }
 
-    // Simulated authentication logic
+    
     if (username === "admin" && password === "admin123") {
-      setStatus("✅ Login Successful! Welcome Admin.");
+      setStatus(" Login Successful! Welcome Admin.");
     } else if (username === "user" && password === "user123") {
-      setStatus("✅ Login Successful! Welcome User.");
+      setStatus(" Login Successful! Welcome User.");
     } else {
-      alert("❌ Authentication Failed! Invalid credentials");
+      alert(" Authentication Failed! Invalid credentials");
       setStatus("");
     }
   };
@@ -61,3 +61,4 @@ function Authentication() {
 }
 
 export default Authentication;
+
